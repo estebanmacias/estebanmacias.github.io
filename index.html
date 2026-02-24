@@ -3143,7 +3143,7 @@ data-testid="mesh-container-content">
     .video-hero-section {
         padding: 40px 20px;
         text-align: center;
-        background-color: #111111; /* Fondo oscuro */
+        background-color: #111111; /* Fondo oscuro elegante */
         color: #ffffff;
     }
     .video-hero-container {
@@ -3165,25 +3165,41 @@ data-testid="mesh-container-content">
         height: 100%;
         border: 0;
     }
-    .cta-button-purple {
+    /* Contenedor de botones */
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+    .cta-button {
         display: inline-block;
-        margin-top: 10px;
         padding: 18px 0;
         width: 100%;
-        max-width: 850px;
         font-size: 1.1em;
         font-weight: bold;
-        color: #FFFFFF !important;
-        background-color: #6A0DAD;
         text-decoration: none;
         border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(106, 13, 173, 0.4);
         transition: all 0.3s ease;
         font-family: 'Helvetica', Arial, sans-serif;
     }
-    .cta-button-purple:hover {
-        background-color: #8a2be2;
+    .cta-button:hover {
         transform: translateY(-2px);
+        filter: brightness(1.1);
+    }
+    /* Botón Vaki (Oficial) */
+    .btn-vaki {
+        color: #FFFFFF !important;
+        background-color: #E63946; /* Rojo Vaki */
+        box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+    }
+    /* Botón YouTube (Púrpura) */
+    .btn-youtube {
+        color: #FFFFFF !important;
+        background-color: #6A0DAD;
+        box-shadow: 0 4px 15px rgba(106, 13, 173, 0.4);
     }
 </style>
 
@@ -3195,9 +3211,16 @@ data-testid="mesh-container-content">
             allowfullscreen>
         </iframe>
     </div>
-    <a href="https://www.youtube.com/channel/UCsrwIzqM1bEquHqsZ5U8OBw" target="_blank" rel="noreferrer noopener" class="cta-button-purple">
-        VISITA MI CANAL Y SUSCRÍBETE
-    </a>
+
+    <div class="button-container">
+        <a href="https://vaki.co/vaki/el-eco-de-la-transmutaci-n-un-viaje-hacia-bunach" target="_blank" rel="noreferrer noopener" class="cta-button btn-vaki">
+            APOYAR "EL ECO DE LA TRANSMUTACIÓN" EN VAKI
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCsrwIzqM1bEquHqsZ5U8OBw" target="_blank" rel="noreferrer noopener" class="cta-button btn-youtube">
+            SUSCRÍBETE EN YOUTUBE
+        </a>
+    </div>
 </section>
 
 <section id="comp-m2qtaaui" style="padding: 60px 0; background-color: #1a1a1a; color: #ffffff; text-align: center;">
@@ -3208,9 +3231,6 @@ data-testid="mesh-container-content">
             <b>A lo largo de su carrera musical, Creciente Sónica se ha ganado el cariño de los amantes de la música Electrónica siendo el Folklore Magdalenense la influencia fundamental.</b><br><br>
             Tras presentarse en una variedad de lugares y grabar nuevos sencillos desde 2019, es un modelo a seguir para los nuevos exponentes independientes en Colombia.
         </p>
-        <div style="margin-top: 30px;">
-            <a href="https://www.patreon.com/c/crecientesonica/membership" target="_blank" style="background: #ffffff; color: #000; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;">Contacto / Patreon</a>
-        </div>
     </div>
 </section>
 
