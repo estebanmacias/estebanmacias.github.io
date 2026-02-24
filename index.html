@@ -228,26 +228,22 @@ menu..........................
         display: flex !important;
         justify-content: space-between !important;
         align-items: center !important;
-        position: fixed !important; /* FIXED para que flote sobre Wix */
-        top: 0 !important;
+        position: fixed !important; 
+        top: 35px !important; /* BAJAMOS EL MENÚ PARA QUE SE VEA LA PUBLICIDAD */
         left: 0 !important;
         width: 100% !important;
-        z-index: 9999999 !important; /* Máxima prioridad */
+        z-index: 9999999 !important; 
         border-bottom: 2px solid #6A0DAD !important;
         box-sizing: border-box !important;
     }
     .logo-cs { font-family: sans-serif !important; font-weight: bold !important; color: #6A0DAD !important; text-decoration: none !important; letter-spacing: 2px !important; font-size: 16px !important; }
     .links-cs a { font-family: sans-serif !important; color: #ffffff !important; text-decoration: none !important; margin-left: 15px !important; font-size: 13px !important; text-transform: uppercase !important; font-weight: bold !important; }
-</style>
 
-<nav id="menu-emergente-cs">
-    <a href="#" class="logo-cs">CRECIENTE SÓNICA</a>
-    <div class="links-cs">
-        <a href="#video">Inicio</a>
-        <a href="#tienda">Música</a>
-        <a href="https://www.patreon.com/crecientesonica" target="_blank">Patreon</a>
-    </div>
-</nav>
+    /* EMPUJAMOS EL CONTENIDO DE WIX HACIA ABAJO PARA QUE NO LO TAPE EL MENÚ */
+    #SITE_CONTAINER {
+        margin-top: 50px !important;
+    }
+</style>
 	
 </head>
 <body 
